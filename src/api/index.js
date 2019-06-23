@@ -7,6 +7,6 @@ export const getUser = data => {
 
 export const addUser = data => {
   console.log(data)
-  return ajax.post("/setValue", data);
-  //return ajax.post("/setValue", qs.stringify(data));
+  //return ajax.post("/setValue", data);
+  return ajax.post("/setValue", qs.stringify(data));
 };

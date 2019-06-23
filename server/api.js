@@ -33,12 +33,16 @@ module.exports = {
     });
   },
   setValue(req, res, next) {
+    // if (req.method === "OPTIONS") {
+    //   return;
+    // }
     console.log(req.body);
     var id = req.body.id,
       name = req.body.name;
     pool.getConnection((err, connection) => {
       var sql = sqlMap.setValue;
       connection.query(sql, [name, id], (err, result) => {
+        // res.setHeader("Content-Type", "application/json");
         res.header("Access-Control-Allow-Origin", "*");
         res.header(
           "Access-Control-Allow-Headers",

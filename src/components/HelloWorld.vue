@@ -32,7 +32,7 @@ export default {
         });
     },
     handlePost() {
-      const data = { id: 1, name: "dulei" };
+      const data = { id: 1, name: "sasasas" };
       addUser(data)
         .then(res => {
           console.log(res);

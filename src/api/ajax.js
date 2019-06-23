@@ -15,10 +15,10 @@ import { dict } from "@/utils/base.js";
 // 创建axios实例
 const ajax = axios.create({
   baseURL: dict.API_URL,
-  headers: {
-    "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
-    //token: "mm"
-  }
+  // headers: {
+  //   "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+  //   //token: "mm"
+  // }
 });
 //在实例创建后改变默认值
 //ajax.defaults.headers.common ['Authorization'] = "nn";
