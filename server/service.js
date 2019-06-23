@@ -24,7 +24,6 @@ module.exports = {
     });
   },
   delUser(req, res, next) {
-    console.log(req.query)
     pool.getConnection((err, connection) => {
       connection.query(
         "DELETE FROM user WHERE id = ?",
