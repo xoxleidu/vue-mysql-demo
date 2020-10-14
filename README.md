@@ -22,4 +22,4 @@ cd server
 $ node index.js
 ```
 
-<code>fdfdasfdsa</code>
+<pre><code>fdfdasfdsa</code></pre>
